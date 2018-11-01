@@ -79,9 +79,29 @@ body {
 .dropdown-item:hover {
     background-color: #F8F4F4;
 }
-
-
-
+.dropdown-item:active {
+    background-color: #F8F4F4;
+    color: #4C2C2C;
+}
+.shown {
+    display: block;
+}
+.notshown {
+    display: none;
+}
+#mapid {
+    height: 400px;
+    width: 500px;
+}
+#list-contact > li {
+    padding: 6px;
+}
+#list-contact > li:hover {
+    background-color: #F8F4F4;
+}
+#list-contact > li:nth-child(1):hover {
+    background-color: white;
+}
 
 
 
@@ -93,10 +113,12 @@ body {
 
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 450px) {
     .navbar-brand {
-        font-size: 14px;
+        font-size: 14px !important;
     }
+}
+@media screen and (max-width: 457px) {
     .footer {
         font-size: 12px;
     }
@@ -108,6 +130,15 @@ body {
     }
     .nav-link.active:before {
         content: none;
+    }
+    #mapid {
+        height: 400px;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1199px) {
+    .navbar-brand {
+        font-size: 18px;
     }
 }
 
